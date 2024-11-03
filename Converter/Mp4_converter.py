@@ -1,4 +1,8 @@
 import tempfile
+
+import os
+os.environ["IMAGEIO_FFMPEG_EXE"] = "/usr/bin/ffmpeg"
+
 from moviepy.editor import VideoFileClip
 import io
 

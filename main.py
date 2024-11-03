@@ -4,6 +4,9 @@ from Summary.summary import LLM
 from Converter.Mp4_converter import VideoConverter
 from Converter.YT_converter import youtube_converter
 
+import os
+os.environ["IMAGEIO_FFMPEG_EXE"] = "/env3/bin/ffmpeg"
+
 def main():
     st.title("Audio Transcription and Summarization")
 
